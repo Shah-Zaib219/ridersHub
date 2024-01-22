@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RidersHUB</title>
+    <link rel="icon" href="icons8-tire-burning-rubber-50.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+   <script src="main.js">
+   </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg topone" style="background-color: black;" >
+        <div class="container-fluid subone" >
+            <a class="navbar-brand" href="#"><span style="color: #920000;">Riders</span><span style="color: #FCC419;">HUB</span></a>
+            <a href="" class="navbar-brand"><img src="icons8-tire-burning-rubber-50.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mbtn">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleCaptions"><button type="button" class="btn btn-outline-danger">Home</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer"><button type="button" class="btn btn-outline-danger">Offers</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bottom"><button type="button" class="btn btn-outline-danger">Subscribe</button></a>
+                    </li>
+                </ul>
+                <a onclick="togglePopup()" id="cart"><img src="shopping-cart.png" alt="img" width="80px" class="d-flex"> <span
+                        id="itemCount">0</span></a>
+            </div>
+        </div>
+    </nav>
+    <div id="popupContainer">
+        <button type="button" class="btn-close" aria-label="Close" onclick="togglePopup()" style="background-color: #FCC419;"></button>
+       <h2>Cart</h2>
+        <div id="carttable"></div>
+        <button class="btn btn-outline-warning" onclick="order()">Order Now</button><p><span><b>No returns; warranty included</b></span></p>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" >
+        <div class="carousel-indicators" style="z-index: 2;">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active slide">
+                <video class="d-block w-100" loop autoplay muted>
+                    <source src="1126.mp4"
+                        type="video/mp4">
+                </video>
+                <div class="carousel-caption d-none d-md-block slidecontent">
+                    <h5>THE BMW S 1000 RR</h5>
+                    <p>SUPERBIKE OF SUPERLATIVES</p>
+                </div>
+            </div>
+            <div class="carousel-item slide">
+                <video class="d-block w-100" autoplay loop>
+                    <source src="download (1) (online-video-cutter.com) (1).mp4" type="video/mp4">
+                </video>
+                <div class="carousel-caption d-none d-md-block slidecontent">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item slide">
+                <img src="1b06f006-2aa3-4673-ac3b-d83256bbc276.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block slidecontent">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="offers" id="offer">
+        <h2><span style="color: #920000;">OFFERS</span> & <span style="color: #FCC419;"> PROMOTIONS</span></h2>
+        <div class="suboffer">
+            <div class="card" style="width: 18rem;">
+                <img src="https://static.toiimg.com/thumb/imgsize-23456,msid-65325836,width-600,resizemode-4/65325836.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bikes</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#bike" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://cdn.vox-cdn.com/thumbor/JHdgfbFkQjQvbex8ULfVMiwd1A8=/0x0:2050x1367/1400x1400/filters:focal(1025x683:1026x684)/cdn.vox-cdn.com/uploads/chorus_asset/file/15648477/v-DSC00848-1.0.0.1452381941.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Helmets</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#helmet" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxF8esAtG7yqQE2cUXXHIue6Uf-vdUnF2vNQ&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Exhaust</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#exaust" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="accessories.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Accessories</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#accessorie" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.kawasaki.com/Content/Images/gifts-xs.jpg?w=750" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gifts & Collectibles</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.kawasaki.com/Content/Images/kpo_xs.jpg?w=750" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Performance Oil</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.kawasaki.com/Content/Images/maintenance-xs.jpg?w=750" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Maintenance Products</h5>
+                  <p class="card-text">Click the Button to go to Items</p>
+                  <a href="#" class="btn btn-outline-danger">Go to Buy</a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="bike">
+        <h2>BIKES</h2>
+        <div id="showbike"></div>
+    </div>
+    <div id="helmet">
+        <h2>Helmets</h2>
+        <div id="showhelmet"></div>
+    </div>
+    <div id="exaust">
+        <h2>Exausts</h2>
+        <div id="showexaust"></div>
+    </div>
+    <div id="accessorie">
+        <h2>Accessories</h2>
+        <div id="showaccessorie"></div>
+    </div>
+    <div class="note">
+        <div class="card text-center">
+            <div class="card-header">
+              By <span style="color: #920000;">Riders</span><span style="color: #FCC419;">HUB</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title</h5>
+              <p class="card-text">Life is short, buy the motorcycle, have a ride, live your dreams.</p>
+              <a href="#carouselExampleCaptions" class="btn btn-outline-danger">Go to Top</a>
+            </div>
+            <div class="card-footer text-body-secondary" style="color: #920000;">
+              2 days ago
+            </div>
+          </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #1c1816; margin: 0; padding: 0;" id="bottom">
+        <div class="container-fluid" style="background-color: #1c1816; margin: 0; padding: 1% 5% 1% 5%;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex" role="search">
+              <input class="form-control me-4" type="search" placeholder="Subscribe for latest updates" aria-label="Search">
+              <button class="btn btn-outline-danger" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

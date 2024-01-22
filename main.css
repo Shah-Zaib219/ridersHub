@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.topone{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.slide h5{
+    color: #FCC419;
+    font-size: 46px;
+    font-weight: 600;
+}
+.slide p{
+    color: #920000;
+    font-weight: 700;
+}
+.topone{
+    padding:0.5% 5% 0.5% 5%;
+}
+.subone a span{
+    font-weight: 700;
+    font-size: 26px;
+}
+.subone a img{
+    width: 35px ;
+}
+ .mbtn li a{
+    margin-left: 20px;
+}
+.mbtn li a button:hover{
+    color: #FCC419;
+}
+#popupContainer {
+    display: none;
+    color: #FCC419;
+    position: fixed;
+    width: 40%;
+    height: auto;
+    bottom: 0;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+#popupContainer h2{
+    text-align: center;
+    display: block;
+    margin: 0;
+    background-color: hsl(0, 0%, 0%,0.5);
+}
+#cart {
+    position: relative;
+    cursor: pointer;
+}
+
+#itemCount {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    color: #FCC419;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    margin: 0px 5px 5px 5px;
+}
+.cart-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cart-table, .cart-table th, .cart-table td {
+    border: 1px solid #FCC419;
+  }
+
+  .cart-table th, .cart-table td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
+.slide video{
+    z-index: 0;
+}
+.slide .slidecontent{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    text-align: left;
+    z-index: 1;
+}
+.offers{
+    padding: 3%;
+}
+.offers h2{
+    color: white;
+}
+.suboffer{
+    width: 100%;
+}
+.suboffer {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .suboffer {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(0, 100%, 29%) transparent;
+  }
+  .suboffer::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  .suboffer::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 100%, 29%);
+  }
+  
+  .suboffer::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+.card img{
+    width: 18rem;
+    height: 15rem;
+}
+.card{
+    display: inline-block;
+    overflow: hidden;
+    color:#FCC419;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+.card h5{
+    color: #FCC419;
+}
+.card a:hover{
+    color:#FCC419;
+}
+#bike{
+    padding: 3%;
+}
+#showbike {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  #showbike {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(0, 100%, 29%) transparent;
+  }
+  
+  #showbike::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  #showbike::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 100%, 29%);
+  }
+  
+  #showbike::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+#bike img{
+    width: 16em;
+}
+#showbike div{
+    display: inline-block;
+    overflow: hidden;
+   padding: 3% 1%;
+    margin-bottom: 2%;
+    margin-right: 2%;   
+    color: #FCC419;
+}
+#helmet{
+    padding: 3%;
+}
+#showhelmet{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+#showhelmet img{
+    width: 16rem;
+}
+.card{
+    background-color: #1c1816;
+}
+.bikecard, .helmetcard, .accessoriescard{
+    background-color: #1c1816;
+}
+.bikecard h4, .helmetcard h4, .accessoriescard h4{
+    padding: 3%;
+    margin-left: 2%;
+}
+.bikecard p, .helmetcard p, .accessoriescard p{
+    padding:3%;
+    margin-left: 2%;
+}
+.bikecard button, .helmetcard button, .accessoriescard button{
+    margin: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.bikecard, .helmetcard, .accessoriescard,.card {
+    transition: box-shadow 0.3s ease-in-out, width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .bikecard:hover, .helmetcard:hover, .accessoriescard:hover, .card:hover {
+    box-shadow: 0 0 40px hsl(0, 100%, 29%, 1);
+    transform: scale(1.1);
+  }
+  
+#showhelmet div{
+    border-radius: 6px;
+    width: 16rem;
+   /* padding: 1rem; */
+    color: #FCC419;
+    overflow: hidden;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+}
+#showhelmet div h4{
+    padding-top: 5%;
+    font-size: 18px;
+}
+#exaust{
+    padding: 3%;
+}
+#showexaust{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+#showexaust img{
+    width: 16rem;
+}
+#showexaust div{
+    border-radius: 6px;
+    width: 16rem;
+   /* padding: 1rem; */
+    color: #FCC419;
+    overflow: hidden;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+}
+#showexaust div h4{
+    padding-top: 5%;
+    font-size: 18px;
+}
+#accessorie{
+    padding: 3%;
+}
+#showaccessorie{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+#showaccessorie img{
+    width: 16rem;
+}
+#showaccessorie div{
+    border-radius: 6px;
+    width: 16rem;
+   /* padding: 1rem; */
+    color: #FCC419;
+    overflow: hidden;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+}
+#showaccessorie div h4{
+    padding-top: 5%;
+    font-size: 18px;
+}
+.cart-table{
+    width: 100%;
+}
+.cart-table{
+    border: 1px solid #FCC419;
+}
+.btn:hover {
+color: #FCC419;
+}
+.btn-outline-warning:hover{
+    color: #920000;
+}
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    color: #FCC419;
+    border-bottom: 2px solid #920000;
+}
+.note{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+.navbar a button{
+    border: none;
+}
